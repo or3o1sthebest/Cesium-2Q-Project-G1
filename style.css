@@ -1,0 +1,257 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 15px; 
+    margin:0;
+}
+@media (max-width:768px){
+    body{
+        flex-direction: column;
+    }
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(100, 169, 188);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+header h1{
+    display: inline-block;
+    transform: scale(200%);
+}
+.logo{
+    width: 6rem;
+    height:auto;
+}
+.mainnav div{
+    border-style: solid;
+    border-color: rgb(5, 48, 78);
+    border-width: 0.2rem;
+    padding:0.5rem 0.75rem;
+    text-decoration: none;
+}
+.active{
+    background-color: rgb(205, 253, 255);
+}
+.active a{
+    color:rgb(11, 60, 96);
+}
+.inactive a{
+    display: inline-block;
+    transition: transform 0.5s, color 0.5s;
+}
+.inactive a:hover{
+    transform: scale(1.15); 
+    color: rgb(205, 253, 255);
+}
+.mainnav a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(11, 60, 96);
+}
+nav div{
+    color: rgb(241, 255, 255);
+    border-style: none;
+    padding:0.25rem 13.888%;
+}
+nav a:hover{
+    text-decoration-color: rgb(16, 39, 59);
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(244, 244, 253); 
+}
+
+/*Home Page*/
+
+.separator{
+    align-items: center;
+    background-color: rgb(100, 169, 188);
+    position: relative;
+}
+.separator h3{
+    padding: 0.5rem 1rem;
+}
+.Latestnews{
+    height:auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap:1rem;
+}
+.portion a .portion2 a{
+    width:100%;
+    height:auto;
+}
+.portion img{
+    width:100%;
+    display:block;
+}
+.text{
+    width: 97.9%;
+    height:auto;
+}
+.portion:hover{
+    filter: brightness(50%);
+    transform: scale(103%)
+}
+.portion{
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 1s;
+}
+.portion div{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0%;
+    color:white;
+    background-color: rgb(11, 60, 96);
+    padding-left:1rem;
+}
+.Othernews{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.Othernews img{
+    width: 100%;
+    height: 20rem;     
+}
+.other{
+    width: 95.7%;
+    height:auto;
+}
+.other h4{
+    font-size: 0.8rem;
+}
+.other2{
+    width: 97%;
+    height:auto;
+}
+
+.other2 h4{
+    font-size: 1rem;
+}
+/*News Articles Genre*/
+.section{
+    gap: 1rem;
+}
+.Latestnewsarticles{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    height:auto;
+}
+.article{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap : 1rem;
+}
+.article h2{
+    justify-content: center;
+}
+.articlepic{
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 1s;
+}
+.articlepic:hover{
+    transform: scale(103%);
+    filter: brightness(50%);
+}
+.Othernews a{
+    width:100%;
+    height:auto;
+}
+.othermainnews{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.othermainnews a{
+    width:100%;
+    height:auto;
+}
+.othermainnews img{
+    width:100%;
+    height:15rem;
+}
+.title h2{
+    background-color: rgb(11, 60, 96);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    display: block;
+}
+.title{
+    background-color: rgba(11, 61, 96, 0.521);
+    font-size: 15px;
+    padding: 0.1rem 1rem;
+    bottom: 0%;
+}
+
+/*individual articles*/
+
+.articletitle  {
+ text-align: center;
+}
+.headline{
+    width: 100%;
+    height: auto;
+}
+.allcontent {
+    width: 100%;
+    height: auto;
+}
+.content {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.content .text {
+    font-size: 1.1rem;
+    max-width: 5000px;  
+    line-height: 1.7;
+}
+.content img {
+    width: 35%;
+    height: auto;
+}
+/*About Page*/
+.mantra{
+    text-align: center;
+}
+.highlights {
+    color:rgb(61, 119, 135);
+}
+.text .highlights{
+    color:rgb(74, 134, 150);
+    font-weight: bold;
+}
